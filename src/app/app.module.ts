@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { personasComponent } from './personas/personas.component';
 import { PersonaComponent } from './persona/persona.component';
+import { FormsModule } from '@angular/forms';
 
 //decorador NgModule da classe AppMoodule{}
 @NgModule({
@@ -13,6 +14,7 @@ import { PersonaComponent } from './persona/persona.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [
