@@ -3,10 +3,18 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-persona',
   templateUrl: './persona.component.html',
-  styleUrl: './persona.component.css'
+  styleUrls: ['./persona.component.css']
 })
 export class PersonaComponent {
-  
-  constructor() { }
+
+  nombre: string = 'Juan';
+  apellido: string = 'Perez';
+  edad: number = 28;
+
+  /*private edad: number = 28;
+
+  getEdade(): number{
+    return this.edad;
+  }*/
 
 }
