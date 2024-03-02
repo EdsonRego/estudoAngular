@@ -2,16 +2,13 @@
     <div class="row">
         <div class="col">
             <h1>Listado de Personas</h1>
-            <button class="btn btn-primary" 
-            [disabled]='deshabilitar' 
-            (click)='agregarPersona()'>Agregar
+            <button class="btn btn-primary" [disabled]='deshabilitar' (click)='agregarPersona()'>Agregar
                 Persona</button>
-            <p> {{mensaje}}</p>
+            <p *ngIf="mostrar"> {{mensaje}} con el título de {{titulo}}</p>
             <app-persona></app-persona>
 
             <label>Título Persona</label>
-            <input type="text" class="form-control" 
-            [(ngModel)]="titulo">
+            <input type="text" class="form-control" [(ngModel)]="titulo">
             {{ titulo }}
         </div>
     </div>
